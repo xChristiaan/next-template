@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
 }
 
-export default nextConfig
+const contentlayer = await import("next-contentlayer").catch(() => ({
+  withContentlayer: (config) => config,
+}))
+
+export default contentlayer.withContentlayer(nextConfig)
