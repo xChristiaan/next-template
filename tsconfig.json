@@ -15,7 +15,13 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "framer-motion": ["./lib/stubs/framer-motion"],
+      "next-seo": ["./lib/stubs/next-seo"],
+      "zod": ["./lib/stubs/zod"],
+      "contentlayer/source-files": ["./lib/stubs/contentlayer"],
+      "next-contentlayer/hooks": ["./lib/stubs/next-contentlayer-hooks"],
+      "contentlayer/generated": ["./lib/stubs/contentlayer-generated"]
     },
     "plugins": [
       {
